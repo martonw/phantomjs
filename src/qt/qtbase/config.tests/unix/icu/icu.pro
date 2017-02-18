@@ -13,5 +13,5 @@ win32 {
         LIBS += -licuin -licuuc -licudt
     }
 } else {
-    LIBS += -licui18n -licuuc -licudata
+    LIBS += -licui18n -licuuc -licudata -ldl
 }
