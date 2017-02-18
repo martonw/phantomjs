@@ -2888,7 +2888,7 @@ void Configure::generateOutputVars()
     if (dictionary["FONT_CONFIG"] == "yes") {
         qtConfig += "fontconfig";
         qmakeVars += "QMAKE_CFLAGS_FONTCONFIG =";
-        qmakeVars += "QMAKE_LIBS_FONTCONFIG   = -lfreetype -lfontconfig";
+        qmakeVars += "QMAKE_LIBS_FONTCONFIG   = -lfreetype -lfontconfig -lxml2";
     }
 
     if (dictionary["QT_GLIB"] == "yes")
